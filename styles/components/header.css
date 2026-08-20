@@ -1,0 +1,349 @@
+/* =========================================================
+   ANNOUNCEMENT BAR
+   ========================================================= */
+.announcement-bar {
+  height: 35px;
+  width: 100%;
+  background-color: #050608;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* -------------------------
+   Left side
+   ------------------------- */
+.bar-left {
+  padding-left: 0px;
+}
+
+.shipping-message {
+  font-size: 12px;
+  font-family: "Inter",
+    sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+
+/* -------------------------
+   Right side
+   ------------------------- */
+
+.bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* -------------------------
+   Language / Currency items
+   ------------------------- */
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.bar-label {
+  font-size: 14px;
+  font-family: "Inter",
+    sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+/* -------------------------
+   Dropdown arrow
+   ------------------------- */
+
+.bar-arrow {
+  height: 20px;
+  width: 20px;
+  padding-top: 4px;
+}
+
+/* -------------------------
+   Separators
+   ------------------------- */
+
+.bar-separator {
+  height: 18px;
+  width: 1px;
+  background-color: rgb(124, 121, 121);
+}
+
+/* -------------------------
+   Help & Support
+   ------------------------- */
+
+.bar-link {
+  font-size: 14px;
+  font-family: "Inter",
+    sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* =========================================================
+   MAIN HEADER
+   ========================================================= */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141517;
+  height: 70px;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+/* -------------------------
+   Logo container
+   ------------------------- */
+
+.header-left {
+  padding-left: 0px;
+}
+
+/* -------------------------
+   Velora logo
+   ------------------------- */
+
+.site-logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #F5F5F5;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Accent color used for V */
+.logo-accent {
+  color: #D97843;
+}
+
+
+/* =========================================================
+   SEARCH BAR
+   ========================================================= */
+.header-center {
+  /* Search bar container */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  height: 38px;
+  background-color: #18191B;
+  border: 1px solid #35363A;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+/* -------------------------
+   Search input
+   ------------------------- */
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0px 16px;
+  color: #F5F5F5;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #77797D;
+}
+
+/* -------------------------
+   Search button
+   ------------------------- */
+
+.search-button {
+  width: 48px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* -------------------------
+   Search icon
+   ------------------------- */
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+
+}
+
+/* =========================================================
+   HEADER ACTIONS
+   ========================================================= */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-right: 0px;
+
+}
+
+/* -------------------------
+   Individual action
+   ------------------------- */
+.header-action {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+/* -------------------------
+   Action icons
+   ------------------------- */
+.header-action-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.header-cart-icon {
+  height: 25px;
+  width: 25px;
+}
+
+/* -------------------------
+   Cart badge
+   ------------------------- */
+
+.cart-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 18px;
+  left: 16px;
+  background-color: #E97845;
+  border: none;
+  border-radius: 50%;
+}
+
+/* -------------------------
+   Cart quantity
+   ------------------------- */
+.cart-quantity {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* -------------------------
+   Action labels
+   ------------------------- */
+.header-action-label {
+  color: white;
+}
+
+/* =========================================================
+   MAIN NAVIGATION
+   ========================================================= */
+
+.main-navigation {
+  background-color: #000000;
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid #252629;
+}
+
+/* -------------------------
+   Navigation list
+   ------------------------- */
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0 65px;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+
+}
+
+.navigation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navigation-link {
+  font-family: "Inter",
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 55px;
+  color: #F2F2F2;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+/* -------------------------
+   Navigation hover
+   ------------------------- */
+
+.navigation-link:hover {
+  color: #D97843;
+}
+
+/* -------------------------
+   Active navigation link
+   ------------------------- */
+
+.navigation-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #D97843;
+}
+
+/* -------------------------
+   Navigation dropdown arrow
+   ------------------------- */
+.navigation-arrow {
+  padding-top: 4px;
+  height: 22px;
+  width: 22px;
+}

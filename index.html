@@ -8,11 +8,12 @@
     content="A modern, full-stack e-commerce platform with product discovery, authentication, persistent cart, advanced search and filtering, secure checkout, responsive UI, testing, and cloud deployment.">
 
   <title>Velora — Full-Stack E-Commerce Platform</title>
-
+  <link rel="stylesheet" href="styles/components/header.css">
 
 </head>
 
 <body>
+
   <!-- =========================================
   ANNOUNCEMENT BAR
 ========================================== -->
@@ -24,19 +25,17 @@
     </div>
     <div class="bar-right">
       <div class="bar-item language-selector">
-        <span class="bar-label">English</span>
-        <span class="bar-arrow">
-          <img src="assets/icons/chevron-down.svg" alt="">
+        <span class="bar-label">
+          English
         </span>
+        <img src="assets/icons/chevron-down.svg" alt="" class="bar-arrow">
       </div>
 
       <span class="bar-separator"></span>
 
       <div class="bar-item currency-selector">
         <span class="bar-label">USD</span>
-        <span class="bar-arrow">
-          <img src="assets/icons/chevron-down.svg" alt="">
-        </span>
+        <img src="assets/icons/chevron-down.svg" alt="" class="bar-arrow">
       </div>
 
       <span class="bar-separator"></span>
@@ -52,64 +51,67 @@
   ========================================== -->
 
   <header class="site-header">
-    <div class="header-container">
+    <!-- Logo -->
+    <div class="header-left">
+      <a href="index.html" class="site-logo">
+        <span class="logo-accent">V</span>ELORA</a>
+    </div>
 
-      <!-- Logo -->
-      <div class="header-left">
-        <a href="index.html" class="site-logo">VELORA</a>
-      </div>
+    <!-- Search -->
+    <div class="header-center">
+      <form class="search-bar">
+        <input type="search" class="search-input" placeholder="Search for products..." aria-label="Search products">
 
-      <!-- Search -->
-      <div class="header-center">
-        <form class="search-bar">
-          <input type="search" class="search-input" placeholder="Search for products..." aria-label="Search products">
+        <button type="submit" class="search-button" aria-label="Search">
+          <img src="assets/icons/search.svg" alt="" class="search-icon">
+        </button>
+      </form>
+    </div>
 
-          <button type="submit" class="search-button" aria-label="Search">
-            <img src="assets/icons/search.svg" alt="" class="search-icon">
-          </button>
-        </form>
-      </div>
+    <!-- Actions -->
+    <div class="header-right">
 
-      <!-- Actions -->
-      <div class="header-right">
+      <!-- Wishlist -->
+      <a href="#" class="header-action wishlist-action">
+        <img src="assets/icons/favorite.png" alt="" class="header-action-icon">
+        <span class="header-action-label">
+          Wishlist
+        </span>
+      </a>
 
-        <!-- Wishlist -->
-        <a href="#" class="header-action wishlist-action">
-          <img src="assets/icons/favorite.png" alt="" class="header-action-icon">
-          <span class="header-action-label">
-            Wishlist
-          </span>
-        </a>
+      <!-- Account -->
+      <a href="login.html" class="header-action account-action">
 
-        <!-- Account -->
-        <a href="#" class="header-action account-action">
+        <img src="assets/icons/user.svg" alt="" class="header-action-icon">
 
-          <img src="assets/icons/user.svg" alt="" class="header-action-icon">
+        <span class="header-action-label">
+          Account
+        </span>
 
-          <span class="header-action-label">
-            Account
-          </span>
+      </a>
 
-        </a>
+      <!-- Cart -->
+      <a href="cart.html" class="header-action cart-action">
 
-        <!-- Cart -->
-        <a href="cart.html" class="header-action cart-action">
+        <div class="cart-icon-wrapper">
 
-          <div class="cart-icon-wrapper">
+          <img src="assets/icons/shopping-bag.svg" alt="" class="header-cart-icon">
 
-            <img src="assets/icons/shopping-bag.svg" alt="" class="header-action-icon">
-
-            <span class="cart-badge">3</span>
-
+          <div class="cart-badge">
+            <span class="cart-quantity">3</span>
           </div>
 
+        </div>
+        <!--
           <span class="header-action-label">
             Cart
           </span>
-        </a>
+          -->
 
-      </div>
+      </a>
+
     </div>
+
   </header>
   <!-- =========================================
     NAVIGATION
@@ -123,10 +125,9 @@
         <a href="shop.html" class="navigation-link">Shop</a>
       </li>
       <li class="navigation-item">
-        <a href="categories.html" class="navigation-link navigation-link-dropdown">Categories
-          <span class="navigation-arrow">
-            <img src="assets/icons/chevron-down.svg" alt="">
-          </span>
+        <a href="categories.html" class="navigation-link navigation-link-dropdown">
+          Categories
+          <img src="assets/icons/chevron-down.svg" alt="" class="navigation-arrow">
         </a>
       </li>
       <li class="navigation-item">
