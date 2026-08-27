@@ -1,0 +1,137 @@
+/* =========================================================
+   BENEFITS SECTION
+   ========================================================= */
+
+#benefits {
+  width: 100%;
+  position: relative;
+  /*
+    Allows the Benefits card to appear
+    above the Hero section.
+  */
+  z-index: 10;
+}
+
+/* =========================================================
+   BENEFITS CONTAINER
+   ========================================================= */
+.benefits-container {
+  /*
+    Uses a flexible width instead of a fixed
+    1400px width to prevent horizontal overflow.
+  */
+  width: calc(100% - 40px);
+
+  /* Limits the width on large screens so the card does not become too wide. */
+  max-width: 1400px;
+
+  /*Defines the minimum height of the card. */
+  min-height: 75px;
+
+  /* Positions the card above the Hero section. */
+  position: absolute;
+  top: -30px;
+  left: 50%;
+
+  /* Centers the card horizontally. */
+  transform: translateX(-50%);
+
+  /* Internal spacing of the card. */
+  padding: 10px 60px;
+
+  /*Card background color. */
+  background-color: #F7F6F3;
+
+  /*
+ Subtle border around the card. */
+  border: 1px solid #E8E6E2;
+
+  /*Rounded corners. */
+  border-radius: 15px;
+
+  /*Subtle shadow to separate the card from the Hero background. */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+  /* Uses CSS Grid to organize the benefits.*/
+  display: grid;
+
+  /*Four equal columns on desktop.*/
+  grid-template-columns: repeat(4, 1fr);
+
+  /*Horizontal spacing between columns.*/
+  column-gap: 50px;
+
+  /* Vertically centers the benefit items. */
+  align-items: center;
+
+}
+
+/* =========================================================
+   INDIVIDUAL BENEFIT
+   ========================================================= */
+
+.benefit-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* =========================================================
+   BENEFIT ICON
+   ========================================================= */
+.benefit-image {
+  height: 40px;
+  width: 40px;
+  /*
+    Keeps the icon proportional
+    without distortion.
+  */
+  object-fit: contain;
+
+  /*
+    Prevents the icon from shrinking
+    when the available space becomes smaller.
+  */
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   BENEFIT CONTENT
+   ========================================================= */
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+  /*
+      Vertical spacing between the title
+      and the description.
+    */
+  gap: 8px;
+
+  /*
+      Prevents long content from overflowing
+      outside the grid column.
+    */
+  min-width: 0;
+}
+
+/* =========================================================
+   BENEFIT TITLE
+   ========================================================= */
+.benefit-title {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+/* =========================================================
+   BENEFIT DESCRIPTION
+   ========================================================= */
+.benefit-description {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #616060;
+}
