@@ -1,0 +1,197 @@
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+#hero {
+  margin-top: 160px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../assets/logo/background/background-img.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.hero-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+
+/* =========================================================
+   HERO LEFT
+   ========================================================= */
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================================================
+   HERO ARROW
+   ========================================================= */
+
+.hero-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hero-arrow-icon {
+  height: 35px;
+  width: 35px;
+  display: block;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+
+}
+
+.hero-eyebrow {
+  color: #D97843;
+  margin: 0 0 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.hero-title {
+  width: 100%;
+  margin: 10px 0;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 4px 0 0;
+  color: rgb(58, 56, 56);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.hero-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+
+  color: white;
+
+  background-color: #D97843;
+
+  border-radius: 6px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.hero-video-button {
+  width: 130px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.hero-video-icon {
+  width: 30px;
+  height: 30px;
+
+  display: block;
+}
+
+.hero-video-text {
+  color: black;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HERO SLIDER DOTS
+   ========================================================= */
+
+.hero-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+
+  background-color: white;
+
+  border-radius: 50%;
+}

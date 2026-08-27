@@ -2,8 +2,12 @@
    ANNOUNCEMENT BAR
    ========================================================= */
 .announcement-bar {
-  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+  height: 35px;
   background-color: #050608;
   display: flex;
   align-items: center;
@@ -99,12 +103,17 @@
    ========================================================= */
 
 .site-header {
+
+  position: fixed;
+  top: 35px;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #141517;
   height: 70px;
-  width: 100%;
   padding: 0 40px;
   box-sizing: border-box;
   border-top: 1px solid black;
@@ -276,9 +285,13 @@
    ========================================================= */
 
 .main-navigation {
+  position: fixed;
+  top: 105px;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: #000000;
   height: 55px;
-  width: 100%;
   border-bottom: 1px solid #252629;
 }
 

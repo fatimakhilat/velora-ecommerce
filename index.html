@@ -8,7 +8,9 @@
     content="A modern, full-stack e-commerce platform with product discovery, authentication, persistent cart, advanced search and filtering, secure checkout, responsive UI, testing, and cloud deployment.">
 
   <title>Velora — Full-Stack E-Commerce Platform</title>
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/components/header.css">
+  <link rel="stylesheet" href="styles/components/hero.css">
 
 </head>
 
@@ -154,25 +156,41 @@
       <div class="hero-container">
         <div class="hero-left">
           <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
-            <img src="assets/icons/back.png" alt="">
+            <img src="assets/icons/back.png" alt="" class="hero-arrow-icon">
           </button>
 
           <div class="hero-content">
-            <h2>NEW COLLECTION 2026</h2>
-            <h1>Elevate Your Everyday Living</h1>
-            <p>Discover premium products curated for quality,
+            <h2 class="hero-eyebrow">
+              NEW COLLECTION 2026
+            </h2>
+            <h1 class="hero-title">
+              Elevate Your Everyday Living
+            </h1>
+            <p class="hero-description">
+              Discover premium products curated for quality,
               style and exceptional performance.
             </p>
-            <a href="shop.html">Shop Collection</a>
-            <button>
-              <img src="assets/icons/play-button.png" alt="">
-              <strong>Watch Video</strong>
-            </button>
+            <div class="hero-actions">
+              <a href="shop.html" class="hero-primary-button">
+                Shop Collection
+              </a>
+              <button class="hero-video-button" type="button">
+                <img src="assets/icons/play-button.png" alt="" class="hero-video-icon">
+                <strong class="hero-video-text">
+                  Watch Video
+                </strong>
+              </button>
+            </div>
           </div>
+        </div>
+        <div class="hero-middle">
+          <span class="hero-dot active"></span>
+          <span class="hero-dot"></span>
+          <span class="hero-dot"></span>
         </div>
         <div class="hero-right">
           <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
-            <img src="assets/icons/arrow-right.png" alt="">
+            <img src="assets/icons/arrow-right.png" alt="" class="hero-arrow-icon">
           </button>
         </div>
       </div>

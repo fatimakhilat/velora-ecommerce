@@ -1,0 +1,29 @@
+/* Supprime les marges et paddings par défaut */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Empêche le défilement horizontal */
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
