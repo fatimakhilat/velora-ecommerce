@@ -1,0 +1,230 @@
+/*BEST SELLERS SECTION*/
+
+#best-sellers {
+  width: 100%;
+  position: relative;
+}
+
+/*BEST SELLERS CONTAINER*/
+
+.best-sellers-container {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/*SECTION HEADER*/
+
+.best-sellers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.best-sellers-title {
+  margin: 0;
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* "View all" link */
+
+.best-sellers-link {
+  text-decoration: none;
+  color: #D97843;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/*PRODUCTS GRID*/
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+/*PRODUCT CARD*/
+.product-card {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  /*
+      Keeps the image and information visually connected.
+    */
+  overflow: hidden;
+  border: 1px solid #E2E0E0;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.product-image-container {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+
+/* Product discount badge */
+.product-discount {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  padding: 5px 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D97843;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* Wishlist button */
+.product-wishlist {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+.product-wishlist img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.product-img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/*PRODUCT INFORMATION*/
+.product-info {
+  position: relative;
+  /*
+  Moves the white information area slightly upward over the image section.
+    */
+  margin-top: -10px;
+  /*
+    Keeps the information panel above
+    the image section.
+    */
+
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 12px 12px;
+  background-color: #FFFFFF;
+
+  /*
+  Creates the rounded upper edge visible
+  in the reference design.
+  */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-name {
+  margin: 0;
+  padding: 4px 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #424141;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Rating stars image */
+.rating-stars {
+  width: 85px;
+  height: auto;
+  display: block;
+}
+
+/* Number of reviews */
+.review-count {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616060;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-price {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.old-price {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #777777;
+  text-decoration: line-through;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #F9F3F3;
+  border: 1px solid #CDCBCB;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.add-to-cart-button img {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+}
