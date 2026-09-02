@@ -1,0 +1,121 @@
+/*  SALE SECTION  */
+
+#sale {
+  width: calc(100% - 40px);
+  height: 270px;
+  margin: 8px auto;
+  background-image: url("../../assets/logo/background/background-sale.png");
+  background-repeat: no-repeat;
+  background-size: 105% auto;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*  SALE CONTAINER  */
+.sale-container {
+  margin: 20px;
+  padding: 0 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sale-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+}
+
+.sale-label {
+  margin: 4px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #D97843;
+}
+
+.sale-title {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.sale-description {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/*   SHOP NOW BUTTON */
+.sale-button {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 110px;
+  margin: 4px 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #D97843;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.sale-button:hover {
+  background-color: #C96B39;
+  transform: translateY(-2px);
+}
+
+.sale-visual {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px dotted #D97843;
+  border-radius: 50%;
+  padding: 2px 2px;
+}
+
+.sale-badge {
+  background-color: #D97843;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #D97843;
+  border-radius: 50%;
+
+}
+
+.sale-badge-label {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.sale-badge-value {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
