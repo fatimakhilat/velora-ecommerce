@@ -10,7 +10,7 @@
   background-position: center;
   display: flex;
   align-items: center;
-  border-radius: 35px;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
 }
