@@ -130,15 +130,20 @@
   font-weight: 500;
 
   text-decoration: none;
-
-  transition: background-color 0.25s ease;
   cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-primary-button:hover {
+  background-color: #de5f20;
+  transform: translateY(-2px);
 }
 
 .hero-video-button {
   width: 130px;
-  height: 40px;
-
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,9 +153,15 @@
   padding: 0;
 
   border: none;
+  border-radius: 6px;
   background-color: transparent;
 
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-video-button:hover {
+  transform: scale(1.05);
 }
 
 .hero-video-icon {

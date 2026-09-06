@@ -8,7 +8,7 @@
 /*BEST SELLERS CONTAINER*/
 
 .best-sellers-container {
-  padding: 40px 30px;
+  padding: 45px 30px 30px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -39,6 +39,14 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.best-sellers-link:hover {
+  color: #f7590b;
+  transform: translateY(-2px);
 }
 
 

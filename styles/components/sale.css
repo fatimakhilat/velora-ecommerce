@@ -3,7 +3,7 @@
 #sale {
   width: calc(100% - 40px);
   height: 270px;
-  margin: 8px auto;
+  margin: 2px auto;
   background-image: url("../../assets/logo/background/background-sale.png");
   background-repeat: no-repeat;
   background-size: 105% auto;
