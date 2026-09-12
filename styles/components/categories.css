@@ -45,7 +45,7 @@
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 30px;
+  gap: 35px;
   justify-content: center;
   padding: 0 35px;
 
@@ -54,8 +54,8 @@
 .category-card {
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
-  align-items: center;
+  row-gap: 16px;
+
   text-decoration: none;
   cursor: pointer;
 }
@@ -85,7 +85,7 @@
 
 .category-details {
   display: flex;
-  gap: 10px;
+  gap: 7px;
   align-items: center;
 }
 
@@ -94,8 +94,9 @@
   align-items: center;
   justify-content: center;
   background-color: hsl(27, 56%, 94%);
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
   border-radius: 50%;
 
 }
@@ -110,7 +111,7 @@
 .category-info {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 6px;
   min-width: 90px;
   align-items: flex-start;
 }
