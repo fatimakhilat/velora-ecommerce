@@ -108,7 +108,6 @@
 }
 
 .footer-benefit-icon {
-
   height: 30px;
   width: 30px;
   object-fit: contain;
@@ -116,15 +115,10 @@
 }
 
 .footer-benefit-name {
-
   display: flex;
-
   align-items: center;
-
   font-family: "Inter", sans-serif;
-
   font-size: 14px;
-
   font-weight: 400;
 
 }
@@ -134,9 +128,7 @@
 .customer-links {
 
   display: flex;
-
   flex-direction: column;
-
   row-gap: 25px;
 
 }
@@ -144,15 +136,10 @@
 .footer-column-title {
 
   margin: 0;
-
   position: relative;
-
   padding-bottom: 20px;
-
   font-family: "Inter", sans-serif;
-
   font-size: 15px;
-
   font-weight: 500;
 
 }
@@ -479,7 +466,9 @@
 
 .footer-social-title,
 .footer-payment-title {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 13px;
@@ -500,9 +489,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
   transition: transform 0.3s ease;
 
 }
@@ -513,7 +504,7 @@
 
 .social-icon {
 
-  height: 33px;
-  width: 33px;
+  height: 22px;
+  width: 22px;
 
 }
