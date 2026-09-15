@@ -84,7 +84,9 @@
 }
 
 /* Product discount badge */
-.product-discount {
+.product-badge.discount,
+.product-badge.best-seller,
+.product-badge.new {
   position: absolute;
   top: 4px;
   left: 8px;
