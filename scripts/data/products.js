@@ -9,7 +9,11 @@ export const products = [
 
     price: 89.99,
     oldPrice: 112.99,
-    discount: 20,
+
+    badge: {
+      type: "discount",
+      label: "-20%"
+    },
 
     image: {
       src: "assets/images/products/Blender.png",
@@ -50,7 +54,12 @@ export const products = [
     stock: 8,
 
     isBestSeller: true,
-    isNewArrival: false
+    isNewArrival: false,
+
+    badge: {
+      type: "best-seller",
+      label: "Best Seller"
+    }
   },
 
   {
@@ -76,7 +85,9 @@ export const products = [
     stock: 30,
 
     isBestSeller: true,
-    isNewArrival: false
+    isNewArrival: false,
+
+    badge: null
   },
 
   {
@@ -102,7 +113,12 @@ export const products = [
     stock: 48,
 
     isBestSeller: true,
-    isNewArrival: false
+    isNewArrival: true,
+
+    badge: {
+      type: "new",
+      label: "New"
+    }
   },
 
   {
@@ -128,20 +144,25 @@ export const products = [
     stock: 59,
 
     isBestSeller: true,
-    isNewArrival: false
+    isNewArrival: false,
+
+    badge: null
+
   }
+
+
 ];
 
 
 export function generateBestSellerHTML(product) {
 
-  let discountHTML = "";
+  let badgeHTML = "";
 
-  if (product.discount !== null) {
+  if (product.badge) {
     // afficher le badge discount
-    discountHTML = `
-       <span class="product-discount">
-         -${product.discount}%
+    badgeHTML = `
+       <span class="product-badge ${product.badge.type}">
+         ${product.badge.label}
        </span>
     `;
   }
@@ -162,7 +183,7 @@ export function generateBestSellerHTML(product) {
   <!-- Product Image -->
   <div class="product-image-container">
   
-      ${discountHTML}
+      ${badgeHTML}
     <button class="product-wishlist" aria-label="Add to wishlist">
       <img src="assets/icons/heart.png" alt="">
     </button>
