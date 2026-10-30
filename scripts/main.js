@@ -1,7 +1,8 @@
-import { renderCategories } from "./data/categories.js"
+import { renderCategories } from "./categories.js"
 
-import { renderBestSellers } from "./data/products.js"
+import { renderBestSellers } from "./products.js"
 
 renderCategories();
 
 renderBestSellers();
+
