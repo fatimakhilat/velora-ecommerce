@@ -231,8 +231,8 @@
                   All Categories
                 </span>
               </div>
-              <span class="all-categories-count">
-                8
+              <span class="all-categories-count js-all-categories-count">
+                0
               </span>
 
             </div>
@@ -240,40 +240,7 @@
             <!-- Department Filter -->
             <div class="department-filter">
               <p class="filter-title">Departement</p>
-              <div class="filter-options">
-                <label class="filter-option">
-                  <div class="filter-option-content">
-                    <input type="checkbox" name="departement" value="kitchen" class="filter-checkbox">
-                    <span class="filter-option-label">
-                      Kitchen
-                    </span>
-                  </div>
-                  <span class="filter-option-count">(3)</span>
-                </label>
-
-                <label class="filter-option">
-                  <div class="filter-option-content">
-                    <input type="checkbox" name="departement" value="appliances" class="filter-checkbox">
-                    <span class="filter-option-label">
-                      Appliances
-                    </span>
-                  </div>
-                  <span class="filter-option-count">
-                    (5)
-                  </span>
-                </label>
-
-                <label class="filter-option">
-                  <div class="filter-option-content">
-                    <input type="checkbox" name="departement" value="tableware" class="filter-checkbox">
-                    <span class="filter-option-label">
-                      Tableware
-                    </span>
-                  </div>
-                  <span class="filter-option-count">
-                    (7)
-                  </span>
-                </label>
+              <div class="filter-options js-filter-options">
               </div>
 
             </div>
@@ -350,7 +317,7 @@
         <!-- Categories Main Content -->
         <div class="categories-content-wrapper">
           <div class="categories-toolbar">
-            <p class="categories-results-count">8 Categories</p>
+            <p class="categories-results-count js-categories-results-count">0 Categories</p>
             <div class="categories-view-switcher">
               <button type="button" class="categories-view-button view-compact" data-view="compact"
                 aria-label="Compact view" aria-pressed="false">
@@ -366,97 +333,7 @@
               </button>
             </div>
           </div>
-          <main class="categories-main-content">
-
-            <a href="shop.html?category=kitchen" class="category-page-card js-category-card">
-              <div class="category-page-img">
-                <img src="assets/images/categories/kitchen.png" alt="Kitchen products" class="category-page-image">
-              </div>
-              <div class="category-page-details">
-                <div class="category-page-icon-wrapper">
-                  <img src="assets/icons/pot.png" alt="" class="category-page-icon">
-                </div>
-                <div class="category-page-info">
-                  <span class="category-page-name">
-                    Kitchen
-                  </span>
-                  <span class="category-page-count">
-                    120+ items
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a href="shop.html?category=appliances" class="category-page-card js-category-card">
-              <div class="category-page-img">
-                <img src="assets/images/categories/appliances.png" alt="Appliances products"
-                  class="category-page-image">
-              </div>
-              <div class="category-page-details">
-                <div class="category-page-icon-wrapper">
-                  <img src="assets/icons/mixer-blender.png" alt="" class="category-page-icon">
-                </div>
-                <div class="category-page-info">
-                  <span class="category-page-name">
-                    Appliances
-                  </span>
-                  <span class="category-page-count">85+ items</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="shop.html?category=tableware" class="category-page-card js-category-card">
-              <div class="category-page-img">
-                <img src="assets/images/categories/tableware.png" alt="Tableware products" class="category-page-image">
-              </div>
-              <div class="category-page-details">
-                <div class="category-page-icon-wrapper">
-                  <img src="assets/icons/tableware-set.png" alt="" class="category-page-icon">
-                </div>
-                <div class="category-page-info">
-                  <span class="category-page-name">
-                    Tableware
-                  </span>
-                  <span class="category-page-count">150+ items</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="shop.html?category=home-decor" class="category-page-card js-category-card">
-              <div class="category-page-img">
-                <img src="assets/images/categories/home decor.png" alt="Home Decor products"
-                  class="category-page-image">
-              </div>
-              <div class="category-page-details">
-                <div class="category-page-icon-wrapper">
-                  <img src="assets/icons/armchair.png" alt="" class="category-page-icon">
-                </div>
-                <div class="category-page-info">
-                  <span class="category-page-name">
-                    Home Decor
-                  </span>
-                  <span class="category-page-count">95+ items</span>
-                </div>
-              </div>
-            </a>
-
-            <a href="shop.html?category=electronics" class="category-page-card js-category-card">
-              <div class="category-page-img">
-                <img src="assets/images/categories/electronics.png" alt="Electronics products"
-                  class="category-page-image">
-              </div>
-              <div class="category-page-details">
-                <div class="category-page-icon-wrapper">
-                  <img src="assets/icons/monitor.png" alt="" class="category-page-icon">
-                </div>
-                <div class="category-page-info">
-                  <span class="category-page-name">
-                    Electronics
-                  </span>
-                  <span class="category-page-count">200+ items</span>
-                </div>
-              </div>
-            </a>
+          <main class="categories-main-content  js-categories-main-grid">
           </main>
         </div>
 
@@ -704,6 +581,9 @@
     </div>
 
   </footer>
+
+
+  <script type="module" src="scripts/categories-page.js"></script>
 
 </body>
 
